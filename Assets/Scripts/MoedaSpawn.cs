@@ -16,13 +16,17 @@ public class MoedaSpawn : MonoBehaviour
     {
         foreach (Transform spawnPoint in spawnPoints)
         {
-            Vector3 spawnPosition = spawnPoint.position + UnityEngine.Random.insideUnitSphere * 2;
-            spawnPosition.z = 0;
+            // Obtém a posição do ponto de spawn
+            Vector3 spawnPosition = spawnPoint.position;
+            // Define a profundidade do eixo Z
+            spawnPosition.z = -0.2f;
 
             Instantiate(moedaPrefab, spawnPosition, Quaternion.identity);
         }
     }
 }
+
+
 
 
 

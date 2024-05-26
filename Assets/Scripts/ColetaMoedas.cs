@@ -21,7 +21,6 @@ public class ColetaMoedas : MonoBehaviour
             if (collectedCoins >= 10)
             {
                 Debug.Log("Você coletou todas as moedas!");
-                //Animação do personagem ganhando
             }
         }
     }
@@ -36,18 +35,11 @@ public class ColetaMoedas : MonoBehaviour
             GameOver();
         }
     }
-
-    private void Start()
-    {
-        //Invoke("GameOver", 25f);
-    }
-
     private void GameOver()
     {
         if (collectedCoins < 10)
         {
             Debug.Log("Tempo esgotado! Você não coletou todas as moedas a tempo.");
-            //Carregar animção de morte e depois tela de game over
             Destroy(gameObject);
             gameOver = true;
 

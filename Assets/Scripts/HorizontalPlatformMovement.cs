@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HorizontalPlatformMovement : MonoBehaviour
 {
-    private Vector3 startPosition;
-    public float velocidade = 2f;
-    public float distancia = 5f;
+    private Vector3 startPosition; // Posição inicial da plataforma
+    public float velocidade = 2f; // Velocidade plataforma
+    public float distancia = 4f; // Distância máxima
 
     private float atrasoInicial;
 
@@ -25,5 +25,4 @@ public class HorizontalPlatformMovement : MonoBehaviour
         }
     }
 }
-
 
