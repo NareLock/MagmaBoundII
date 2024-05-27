@@ -32,13 +32,13 @@ public class PlataformaMovimento : MonoBehaviour
     void MovimentoHorizontal()
     {
         // Calcula o movimento horizontal da plataforma usando a função PingPong para criar um movimento de ida e volta
-        float movimento = Mathf.PingPong(Time.time * velocidade, distancia * 1) - distancia;
+        float movimento = Mathf.PingPong(Time.time * velocidade, distancia * 2) - distancia;
         transform.position = startPosition + Vector3.right * movimento;
     }
 
     void MovimentoVertical()
     {
-        float movimento = Mathf.PingPong(Time.time * velocidade, distancia * 1) - distancia;
+        float movimento = Mathf.PingPong(Time.time * velocidade, distancia * 2) - distancia;
         transform.position = startPosition + Vector3.up * movimento;
     }
 }
