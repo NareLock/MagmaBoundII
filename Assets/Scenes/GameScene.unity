@@ -229,10 +229,9 @@ GameObject:
   - component: {fileID: 364531676}
   - component: {fileID: 364531678}
   - component: {fileID: 364531679}
-  - component: {fileID: 364531680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma6
-  m_TagString: VerticalPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,8 +245,8 @@ Transform:
   m_GameObject: {fileID: 364531673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.76, y: 10.919127, z: 2.2655666}
-  m_LocalScale: {x: 0.264922, y: 0.37235776, z: 1}
+  m_LocalPosition: {x: 14.76, y: 7.55, z: 2.265567}
+  m_LocalScale: {x: 0.264922, y: 0.3723578, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 699774067}
@@ -403,26 +402,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 364531673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6f8d33ba3c7304592e7846d7a32bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 1
   velocidade: 2
-  distancia: 5
---- !u!114 &364531680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364531673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 4
 --- !u!1 &455387988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,7 +1973,7 @@ Transform:
   - {fileID: 1812363866}
   - {fileID: 1171399221}
   - {fileID: 364531674}
-  - {fileID: 721757320}
+  - {fileID: 2131910738}
   m_Father: {fileID: 2034278664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721757319
@@ -2005,10 +1990,9 @@ GameObject:
   - component: {fileID: 721757322}
   - component: {fileID: 721757324}
   - component: {fileID: 721757325}
-  - component: {fileID: 721757326}
-  m_Layer: 0
-  m_Name: Plataforma7
-  m_TagString: VerticalPlatform
+  m_Layer: 6
+  m_Name: Plataforma8
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2022,11 +2006,11 @@ Transform:
   m_GameObject: {fileID: 721757319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.76, y: 10.45, z: 2.2655666}
-  m_LocalScale: {x: 0.23512872, y: 0.21162593, z: 1}
+  m_LocalPosition: {x: -0.1024351, y: 13.50087, z: 0}
+  m_LocalScale: {x: 0.3690051, y: 0.21162593, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 699774067}
+  m_Father: {fileID: 736690095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &721757321
 SpriteRenderer:
@@ -2179,26 +2163,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 721757319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6f8d33ba3c7304592e7846d7a32bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 2
-  distancia: 5
---- !u!114 &721757326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721757319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  tipoMovimento: 0
+  velocidade: 1.5
+  distancia: 7
 --- !u!1 &736690094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,8 +2198,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 721757320}
   - {fileID: 1777200261}
-  - {fileID: 2131910738}
   - {fileID: 1795134158}
   m_Father: {fileID: 2034278664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2589,7 +2559,7 @@ GameObject:
   - component: {fileID: 885369880}
   - component: {fileID: 885369882}
   - component: {fileID: 885369883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3118,10 +3088,9 @@ GameObject:
   - component: {fileID: 1171399223}
   - component: {fileID: 1171399225}
   - component: {fileID: 1171399226}
-  - component: {fileID: 1171399227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma5
-  m_TagString: VerticalPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3135,8 +3104,8 @@ Transform:
   m_GameObject: {fileID: 1171399220}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.73, y: 2.84, z: 2.2655666}
-  m_LocalScale: {x: 0.35875857, y: 0.27041614, z: 1}
+  m_LocalPosition: {x: 9.15, y: 4.51, z: 2.27}
+  m_LocalScale: {x: 0.5050087, y: 0.2704161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 699774067}
@@ -3292,26 +3261,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1171399220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6f8d33ba3c7304592e7846d7a32bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 1
   velocidade: 2
-  distancia: 5
---- !u!114 &1171399227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171399220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 7
 --- !u!1 &1234890673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,7 +3413,7 @@ GameObject:
   - component: {fileID: 1473584448}
   - component: {fileID: 1473584449}
   - component: {fileID: 1473584450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4046,7 +4001,7 @@ GameObject:
   - component: {fileID: 1734217009}
   - component: {fileID: 1734217008}
   - component: {fileID: 1734217007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4224,10 +4179,9 @@ GameObject:
   - component: {fileID: 1777200263}
   - component: {fileID: 1777200265}
   - component: {fileID: 1777200266}
-  - component: {fileID: 1777200267}
-  m_Layer: 0
-  m_Name: Plataforma8
-  m_TagString: HorizontalPlatform
+  m_Layer: 6
+  m_Name: Plataforma9
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4241,8 +4195,8 @@ Transform:
   m_GameObject: {fileID: 1777200260}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 0.87, z: 0}
-  m_LocalScale: {x: 0.2912535, y: 0.24884842, z: 1}
+  m_LocalPosition: {x: 1.31, y: 0.87, z: 0}
+  m_LocalScale: {x: 0.4004736, y: 0.24884842, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 736690095}
@@ -4398,26 +4352,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777200260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361b6d9c950a1814d952477dac7ade72, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 0
   velocidade: 2
-  distancia: 5
---- !u!114 &1777200267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777200260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 7
 --- !u!1 &1795134157
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,10 +4372,9 @@ GameObject:
   - component: {fileID: 1795134160}
   - component: {fileID: 1795134162}
   - component: {fileID: 1795134163}
-  - component: {fileID: 1795134164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma10
-  m_TagString: HorizontalPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4449,8 +4388,8 @@ Transform:
   m_GameObject: {fileID: 1795134157}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.82, y: 9.91, z: 0}
-  m_LocalScale: {x: 0.17359285, y: 0.32685792, z: 1}
+  m_LocalPosition: {x: -0.09, y: 9.42, z: 0}
+  m_LocalScale: {x: 0.17359285, y: 0.2737435, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 736690095}
@@ -4606,26 +4545,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1795134157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361b6d9c950a1814d952477dac7ade72, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 0
   velocidade: 2
-  distancia: 5
---- !u!114 &1795134164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795134157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 4
 --- !u!1 &1812363865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,10 +4565,9 @@ GameObject:
   - component: {fileID: 1812363868}
   - component: {fileID: 1812363870}
   - component: {fileID: 1812363871}
-  - component: {fileID: 1812363872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma4
-  m_TagString: VerticalPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4657,8 +4581,8 @@ Transform:
   m_GameObject: {fileID: 1812363865}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.13, y: 3.9191275, z: 2.2655666}
-  m_LocalScale: {x: 0.34384432, y: 0.2207182, z: 1}
+  m_LocalPosition: {x: -2.35, y: 3.9191275, z: 2.2655666}
+  m_LocalScale: {x: 0.4753648, y: 0.2207182, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 699774067}
@@ -4814,26 +4738,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1812363865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6f8d33ba3c7304592e7846d7a32bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 1
   velocidade: 2
-  distancia: 5
---- !u!114 &1812363872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812363865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 6
 --- !u!1001 &1848555092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5102,10 +5012,9 @@ GameObject:
   - component: {fileID: 2131910740}
   - component: {fileID: 2131910742}
   - component: {fileID: 2131910743}
-  - component: {fileID: 2131910744}
-  m_Layer: 0
-  m_Name: Plataforma9
-  m_TagString: HorizontalPlatform
+  m_Layer: 6
+  m_Name: Plataforma7
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5119,11 +5028,11 @@ Transform:
   m_GameObject: {fileID: 2131910737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.3, y: 9.6, z: 0}
-  m_LocalScale: {x: 0.21207501, y: 0.22118135, z: 1}
+  m_LocalPosition: {x: -5.697565, y: 8.38, z: 2.265567}
+  m_LocalScale: {x: 0.2465372, y: 0.2211813, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 736690095}
+  m_Father: {fileID: 699774067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2131910739
 SpriteRenderer:
@@ -5276,26 +5185,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131910737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361b6d9c950a1814d952477dac7ade72, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c25b566dcb66bd40bd467b414d2b7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMovimento: 1
   velocidade: 2
-  distancia: 5
---- !u!114 &2131910744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131910737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c55e4ec6e21f942a007e25eb4cda99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moedaPrefab: {fileID: 0}
-  spawnPoints: []
-  totalCoins: 10
+  distancia: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

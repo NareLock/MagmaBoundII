@@ -252,7 +252,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lava animada1_0: 7087031280984508066
+      lava animada1_1: 8575169825008536718
+      lava animada1_2: 429217925078703974
+      lava animada1_3: -6704955060338686954
+      lava animada1_4: 7895187665406610571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
