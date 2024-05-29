@@ -6,6 +6,9 @@ public class CameraController : MonoBehaviour
 {
     public Transform playerT;
     public Transform cameraT;
+    [SerializeField]
+    private float[] limit = new float[8];
+    public int portal = 0;
 
     void Update()
     {
@@ -14,8 +17,8 @@ public class CameraController : MonoBehaviour
         {
             // Atualiza a posição da câmera usando os limites definidos e a posição atual do jogador
             cameraT.position = new Vector3(
-                Mathf.Clamp(playerT.position.x, -6.5f, 1.5f), // Limita a posição horizontal da câmera
-                Mathf.Clamp(playerT.position.y, -2.5f, 8.5f), // Limita a posição vertical da câmera
+                Mathf.Clamp(playerT.position.x, limit[0 + portal], limit[2 + portal]), // Limita a posição horizontal da câmera
+                Mathf.Clamp(playerT.position.y, limit[4 + portal], limit[6 + portal]), // Limita a posição vertical da câmera
                 -10); // Mantém a profundidade da câmera fixa
 
             // Mathf.Clamp é usado para limitar a posição da câmera dentro de valores mínimos e máximos
