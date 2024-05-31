@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SpawnPoint
   - Moeda
+  - Boss
+  - Enemy
   layers:
   - Default
   - TransparentFX

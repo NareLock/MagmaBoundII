@@ -8,23 +8,11 @@ public class Portal : MonoBehaviour
     private CameraController controller;
     [SerializeField]
     private Transform teleporte;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 7)
         {
-            teleporte.position = new Vector3(-1.36f, -1.12f, 0);
+            teleporte.position = new Vector3(-2.73f, 2.29f, 0);
             controller.portal += 1;
         }
     }
