@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2815689222804245770}
   - component: {fileID: 1514402513322738972}
   - component: {fileID: 5805736840273691936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Personagem_0
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -121,8 +121,8 @@ GameObject:
   - component: {fileID: 545785474118126682}
   - component: {fileID: 7395295294770925705}
   - component: {fileID: 7572225260564415377}
-  m_Layer: 0
-  m_Name: Player
+  m_Layer: 7
+  m_Name: PlayerFase1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ab3543b7bdefa0b4b860cad51a243920, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

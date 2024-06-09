@@ -948,7 +948,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteSheetPortal2 (1)_0: 7657463899788757959
+      SpriteSheetPortal2 (1)_1: -6665541569022330319
+      SpriteSheetPortal2 (1)_10: -4087064531235617806
+      SpriteSheetPortal2 (1)_11: -8369961247786248013
+      SpriteSheetPortal2 (1)_12: 7012023639586482640
+      SpriteSheetPortal2 (1)_13: 1922237352064764778
+      SpriteSheetPortal2 (1)_14: 3509332750736030787
+      SpriteSheetPortal2 (1)_15: 5272139674711155466
+      SpriteSheetPortal2 (1)_16: -6004543040936836719
+      SpriteSheetPortal2 (1)_17: 7481617036377523159
+      SpriteSheetPortal2 (1)_18: -3034253345011572509
+      SpriteSheetPortal2 (1)_19: 4267320539778879536
+      SpriteSheetPortal2 (1)_2: -7129226266417154763
+      SpriteSheetPortal2 (1)_20: -3086409123198802870
+      SpriteSheetPortal2 (1)_21: -1214955806371445334
+      SpriteSheetPortal2 (1)_22: 2676383929670667087
+      SpriteSheetPortal2 (1)_23: -3494161631738390152
+      SpriteSheetPortal2 (1)_24: -1000438119363582522
+      SpriteSheetPortal2 (1)_25: 4420739727857310565
+      SpriteSheetPortal2 (1)_26: 3454020894754894408
+      SpriteSheetPortal2 (1)_27: -4197779692216132287
+      SpriteSheetPortal2 (1)_28: -7216226068028119090
+      SpriteSheetPortal2 (1)_29: -3267820312932246518
+      SpriteSheetPortal2 (1)_3: -3318654713808389926
+      SpriteSheetPortal2 (1)_30: 2415795335023444621
+      SpriteSheetPortal2 (1)_31: 7256642843014285492
+      SpriteSheetPortal2 (1)_32: -3790375985562467368
+      SpriteSheetPortal2 (1)_33: 3721343680701415865
+      SpriteSheetPortal2 (1)_4: -915518370985176033
+      SpriteSheetPortal2 (1)_5: -5827675008680846187
+      SpriteSheetPortal2 (1)_6: 6507961434152413674
+      SpriteSheetPortal2 (1)_7: 193561716844271102
+      SpriteSheetPortal2 (1)_8: 2536879112939185868
+      SpriteSheetPortal2 (1)_9: -660567767100115664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,19 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField]
-    private CameraController controller;
-    [SerializeField]
-    private Transform teleporte;
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.layer == 7)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            teleporte.position = new Vector3(-2.73f, 2.29f, 0);
-            controller.portal += 1;
+            // Carrega a próxima cena
+            SceneManager.LoadScene("Fase2");
         }
     }
 }

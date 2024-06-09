@@ -7,7 +7,7 @@ public class GameOverControl : MonoBehaviour
 {
     public void Restart()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Fase1");
 
     }
     public void Menu()

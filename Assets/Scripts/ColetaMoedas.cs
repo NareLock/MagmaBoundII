@@ -9,7 +9,7 @@ public class ColetaMoedas : MonoBehaviour
     private int collectedCoins = 0;
     public bool gameOver = false;
 
-    float timer = 60f;
+    float timer = 90f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -51,7 +51,3 @@ public class ColetaMoedas : MonoBehaviour
         }
     }
 }
-
-
-
-
