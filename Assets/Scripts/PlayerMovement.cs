@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D playerRb;
     private Animator anim;
+    [SerializeField]
+    private Transform castPoint;
+    [SerializeField]
+    private LayerMask layerPotion;
+    
 
     private void Awake()
     {
@@ -54,6 +59,15 @@ public class PlayerMovement : MonoBehaviour
         if (playerRb.velocity.y > alturaDoPulo)
         {
             playerRb.velocity = new Vector2(playerRb.velocity.x, alturaDoPulo);
+        }
+        Vector2 direction = new(castPoint.position.x, -450);
+        RaycastHit2D hit = Physics2D.Raycast(castPoint.position, -Vector3.up, 20, layerPotion);
+        Debug.DrawRay(castPoint.position, -Vector3.up, Color.red, 10);
+
+        if (hit.collider != null)
+        {
+            Debug.Log("hit");
+            hit.collider.gameObject.GetComponent<GarrafaPoderosa>().CrackB();
         }
     }
 }
