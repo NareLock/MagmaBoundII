@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
         {
             // Atualiza a posição da câmera usando os limites definidos e a posição atual do jogador
             cameraT.position = new Vector3(
-                Mathf.Clamp(playerT.position.x, -75.6f, -34.15f), // Limita a posição horizontal da câmera
+                Mathf.Clamp(playerT.position.x, -77.4f, -32.6f), // Limita a posição horizontal da câmera
                 Mathf.Clamp(playerT.position.y, 1.2f, 57.7f), // Limita a posição vertical da câmera
                 -10); // Mantém a profundidade da câmera fixa
 

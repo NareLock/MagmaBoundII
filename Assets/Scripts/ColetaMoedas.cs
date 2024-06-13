@@ -11,6 +11,8 @@ public class ColetaMoedas : MonoBehaviour
 
     float timer = 90f;
 
+    public GameObject VictoryScene;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Moeda"))
@@ -20,6 +22,7 @@ public class ColetaMoedas : MonoBehaviour
 
             if (collectedCoins >= 10)
             {
+                VictoryScene.SetActive(true);
                 Debug.Log("Você coletou todas as moedas!");
             }
         }
